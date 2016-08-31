@@ -90,19 +90,29 @@ footer {
 }
 
 #nextArrow {
-	background: url(../img/icons/circle/svg/right-arrow-circular-button.svg) no-repeat;
+	background: url(../img/icons/right-arrow.png) no-repeat;
 	background-size: cover;
-	height: 75px;
-	width: 75px;
+	background-color: white;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
 	display: inline-block;
+	border: none;
+	margin: 40px;
+	top: 0;
 }
 
 #prevArrow {
-	background: url(../img/icons/circle/svg/back-arrow-circular-symbol.svg) no-repeat;
-	height: 75px;
-	width: 75px;
+	background: url(../img/icons/left-arrow.png) no-repeat;
+	background-size: cover;
+	background-color: white;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
 	display: inline-block;
+	border: none;
 }
+
 
 
 
