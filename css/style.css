@@ -1,0 +1,59 @@
+body {
+	font-family: sans-serif;
+}
+
+ul {
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+	max-width: 1100px;
+	text-align: center;
+}
+
+ul li {
+	display: inline-block;
+	margin: 5px 30px 30px 30px;
+}
+
+ul li img {
+	display: block;
+	margin: 0;
+}
+
+.header {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: white;
+	z-index: 1000;
+}
+
+.header input {
+	width: 60%;
+	max-width: 460px;
+	border: 3px solid rgb(230, 230, 230);
+	border-radius: 7px;
+	color: rgb(128, 128, 128);
+	font-size: 16px;
+	height: 40px;
+	outline: 0;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.wrapper {
+	margin-top: 110px;
+}
+
+input:focus {
+	border-color: rgb(0, 0, 77);
+}
+
+footer {
+	margin-top: 150px;
+	text-align: center;
+}
