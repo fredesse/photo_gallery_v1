@@ -89,10 +89,20 @@ footer {
 	margin-bottom: 20px;
 }
 
+#nextArrow {
+	background: url(../img/icons/circle/svg/right-arrow-circular-button.svg) no-repeat;
+	background-size: cover;
+	height: 75px;
+	width: 75px;
+	display: inline-block;
+}
 
-
-
-
+#prevArrow {
+	background: url(../img/icons/circle/svg/back-arrow-circular-symbol.svg) no-repeat;
+	height: 75px;
+	width: 75px;
+	display: inline-block;
+}
 
 
 
