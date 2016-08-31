@@ -4,8 +4,8 @@ var $image = $("<img>");
 var $caption = $("<p></p>");
 var $title = $("<h1></h1>");
 
-var $nextArrow = $('<button id="nextArrow"></button>');
-var $prevArrow = $('<button id="prevArrow"></button>');
+var $nextArrow = $('<div id="nextArrow"></div>');
+var $prevArrow = $('<div id="prevArrow"></div>');
 
 $overlay.append($image);		/* Adds image to overlay */
 
