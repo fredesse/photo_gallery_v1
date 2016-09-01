@@ -66,8 +66,8 @@ footer {
 #overlay {
 	background: rgba(0, 0, 0, .7);
 	width: 100%;
-	height: 100%;
-	position: absolute;
+	height: 100vh;
+	position: fixed;
 	top: 0;
 	left: 0;
 	display: none;
@@ -76,7 +76,7 @@ footer {
 }
 
 #overlay img {
-	margin-top: 10%;
+	margin-top: 7%;
 	max-width: 800px;
 	width: 60%;
 	transform: none;
@@ -140,10 +140,6 @@ footer {
 		margin-top: 150px;
 	}
 }
-
-
-
-
 
 
 
