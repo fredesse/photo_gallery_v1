@@ -125,6 +125,10 @@ footer {
 	transform: scale(1.2);
 }
 
+#prevArrow.active {
+	background-color: blue;
+}
+
 @media (max-width: 540px) {
 	#prevArrow {
 		margin-bottom: -100px;
