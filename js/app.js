@@ -51,17 +51,17 @@ function getCurrentImage (currentImage) {				// Gets current image
 };
 
 function getPrevImage() {									// Gets the previous image
-	imageParent = $(thisImage).parent().prev();
+	imageParent = $(thisImage).prev();
 	if(imageParent.length!=0) {
-		thisImage = $(imageParent.children("a"));
+		thisImage = $(imageParent);
 	}
 	getCurrentImage(thisImage);
 };
 
 function getNextImage() {								// Gets the next image
-    imageParent = $(thisImage).parent().next();
+    imageParent = $(thisImage).next();
     if(imageParent.length!=0) {
-    	thisImage = $(imageParent).children("a");
+    	thisImage = $(imageParent);
     }
     getCurrentImage(thisImage);
 }
