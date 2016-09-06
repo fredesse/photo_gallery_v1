@@ -1,7 +1,7 @@
 
 (function() {                             // Lives in an IIFE
   var $imgs = $('#imageGallery img');
-  var $gallery = $('')         // Get the images
+  var $gallery = $('');         // Get the images
   var $search = $('#searchBar');      // Get the input element
   var cache = [];                         // Create an array called cache
 
@@ -19,10 +19,16 @@
 
       if (query) {                        // If there is some query text
         index = img.text.indexOf(query);  // Find if query text is in there
+
+        if (index === -1) {
+        	img.element.style.display ? 'none'
+        }
+        img.element.style.display ? '';
+        
        
       }
 
-    img.element.style.display = index === -1 ? 'none' : '';  // Show / hide
+    /*img.element.style.display = index === -1 ? 'none' : '';*/  // Show / hide
      
     });
   }

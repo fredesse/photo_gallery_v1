@@ -27,6 +27,7 @@ $("#imageGallery a").click(function(event) {		// Captures the click event on a l
 	$overlay.fadeTo('slow', 1).show();
 });
 
+
 $prevArrow.click(function(event) {				// Shows previous image when clicked
 	event.stopPropagation();
 	getPrevImage();
@@ -36,6 +37,22 @@ $nextArrow.click(function(event) {				// Shows next image when clicked
 	event.stopPropagation();
 	getNextImage();
 });
+
+
+document.body.addEventListener('keydown', function(event){					// Keyboard navigation for next picture
+	var key = event.keyCode || event.which;
+	if (key === 39) {
+		getNextImage();
+	}
+});
+
+document.body.addEventListener('keydown', function(event){					// Keyboard navigation for previous picture
+	var key = event.keyCode || event.which;
+	if (key === 37) {
+		getPrevImage();
+	}
+});
+
 
 function getCurrentImage (currentImage) {				// Gets current image
 	thisImage = currentImage;
