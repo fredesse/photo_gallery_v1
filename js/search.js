@@ -17,18 +17,14 @@
     cache.forEach(function(img) {         // For each entry in cache pass image 
       var index = 0;                      // Set index to 0
 
+      index = img.text.indexOf(query);
+
       if (query) {                        // If there is some query text
         index = img.text.indexOf(query);  // Find if query text is in there
-
-        if (index === -1) {
-        	img.element.style.display ? 'none'
-        }
-        img.element.style.display ? '';
-        
        
       }
-
-    /*img.element.style.display = index === -1 ? 'none' : '';*/  // Show / hide
+ 
+    img.element.style.display = index === -1 ? 'none' : '';		 // Show / hide
      
     });
   }

@@ -87,3 +87,9 @@ function getNextImage() {								// Gets the next image
 $overlay.click(function() {			// Hides overlay
 	$overlay.hide('slow');
 });
+
+$(document).keyup(function(e) {
+if (e.keyCode == 27) { // if user presses esc key
+	$overlay.hide('slow');
+}
+});

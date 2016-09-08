@@ -3,20 +3,11 @@ body {
 }
 
 img {
-	display: inline-block;
 	margin: 5px 30px 30px 30px;
-}
-
-.col {
-	display: inline-block;
 }
 
 img:hover {
 	transform: scale(1.1);
-}
-
-#imageGallery li {
-	display: inline-block;
 }
 
 .header {
@@ -44,13 +35,16 @@ img:hover {
 	padding-right: 7px;
 }
 
+.col {
+	display: inline-block;
+}
+
 #imageGallery {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 110px;
 	max-width: 1100px;
 	text-align: center;
-
 }
 
 input:focus {
@@ -104,7 +98,7 @@ footer {
 	display: inline-block;
 	border: none;
 	margin-bottom: 15%;
-	margin-left: 7%;
+	margin-left: 4%;
 }
 
 #prevArrow {
@@ -117,7 +111,7 @@ footer {
 	display: inline-block;
 	border: none;
 	margin-bottom: 15%;
-	margin-right: 7%;	
+	margin-right: 4%;
 }
 
 #prevArrow:hover,
@@ -128,6 +122,7 @@ footer {
 #prevArrow.active {
 	background-color: blue;
 }
+
 
 @media (max-width: 540px) {
 	#prevArrow {
