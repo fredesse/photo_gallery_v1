@@ -1,6 +1,6 @@
 
 var $overlay = $('<div id="overlay"></div>');
-var $image = $("<img>");
+var $image = $('<iframe></iframe>');
 var $caption = $("<p></p>");
 var $title = $("<h1></h1>");
 
@@ -57,8 +57,9 @@ document.body.addEventListener('keydown', function(event){					// Keyboard navig
 function getCurrentImage (currentImage) {				// Gets current image
 	thisImage = currentImage;
 
-	var imageLocation = $(currentImage).attr("href");		
-	$image.attr("src", imageLocation);
+	var imageLocation = $(currentImage).attr("href");
+	$image.attr("src", imageLocation).attr("frameborder", "0").attr("scrolling", "no").attr("allowfullscreen", "allowfullscreen");
+
 	
 	var captionTitle = $(currentImage).children("img").attr("title");		// Sets the title
 	$title.text(captionTitle);
@@ -84,12 +85,12 @@ function getNextImage() {								// Gets the next image
 }
 
 
-$overlay.click(function() {			// Hides overlay
+$overlay.click(function() {			// Hides overlay with click
 	$overlay.hide('slow');
 });
 
-$(document).keyup(function(e) {
-if (e.keyCode == 27) { // if user presses esc key
-	$overlay.hide('slow');
-}
+$(document).keyup(function(e) {			// Hides overlay with ESC
+	if (e.keyCode == 27) {
+		$overlay.hide('slow');
+	}
 });

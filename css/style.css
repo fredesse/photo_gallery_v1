@@ -1,3 +1,6 @@
+
+/* Front page / Gallery  */
+
 body {
 	font-family: sans-serif;
 }
@@ -57,6 +60,10 @@ footer {
 	margin-bottom: 30px;
 }
 
+
+/* Overlay, iframe & arrows */
+
+
 #overlay {
 	background: rgba(0, 0, 0, .7);
 	width: 100%;
@@ -69,48 +76,47 @@ footer {
 	text-align: center;
 }
 
-#overlay img {
-	margin-top: 7%;
+#overlay iframe {
+	margin-top: 4%;
 	max-width: 800px;
 	width: 60%;
+	height: 60%;
 	transform: none;
+	z-index: 800;
 }
 
 #overlay p, h1 {
 	color: white;
-	width: 60%;
+	width: 80%;
 	max-width: 600px;
 	margin: 0 auto;
 }
 
 #overlay h1 {
 	margin-top: 20px;
-	margin-bottom: 20px;
+}
+
+#nextArrow,
+#prevArrow {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	border: none;
+	margin-bottom: 15%;
 }
 
 #nextArrow {
 	background: url(../img/icons/right-arrow.png) no-repeat;
 	background-size: cover;
 	background-color: white;
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	display: inline-block;
-	border: none;
-	margin-bottom: 15%;
-	margin-left: 4%;
+	margin-left: 6%;
 }
 
 #prevArrow {
 	background: url(../img/icons/left-arrow.png) no-repeat;
 	background-size: cover;
 	background-color: white;
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	display: inline-block;
-	border: none;
-	margin-bottom: 15%;
 	margin-right: 4%;
 }
 
@@ -119,28 +125,54 @@ footer {
 	transform: scale(1.2);
 }
 
-#prevArrow.active {
-	background-color: blue;
+.img-resize {
+	max-width: 100%;
+	text-align: center;
 }
 
+.img-resize:hover {
+	transform: none;
+}
 
-@media (max-width: 540px) {
+@media (max-width: 680px) {
 	#prevArrow {
-		margin-bottom: -100px;
-		margin-right: -100px;
+		margin-bottom: 40px;
+		margin-right: -125px;
 	}
 
 	#nextArrow {
-		margin-bottom: -100px;
+		margin-bottom: 40px;
 		margin-left: -100px;
 	}
 
+	#overlay iframe {
+		width: 90%;
+	}
+
 	#overlay h1 {
-		margin-top: 150px;
+		margin-top: 50px;
 	}
 }
 
+@media (max-width: 540px) {
+	#prevArrow {
+		margin-bottom: 140px;
+		margin-right: -125px;
+	}
 
+	#nextArrow {
+		margin-bottom: 140px;
+		margin-left: -100px;
+	}
+
+	#overlay iframe {
+		width: 90%;
+	}
+
+	#overlay h1 {
+		margin-top: -100px;
+	}
+}
 
 
 
