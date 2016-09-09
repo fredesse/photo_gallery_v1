@@ -66,19 +66,19 @@ function getCurrentImage (currentImage) {				// Gets current image
 	
 	var captionText = $(currentImage).children("img").attr("alt");			// Sets the captions 
 	$caption.text(captionText);
-};
+}
 
 function getPrevImage() {									// Gets the previous image
 	imageParent = $(thisImage).prev();
-	if(imageParent.length!=0) {
+	if(imageParent.length!==0) {
 		thisImage = $(imageParent);
 	}
 	getCurrentImage(thisImage);
-};
+}
 
 function getNextImage() {								// Gets the next image
     imageParent = $(thisImage).next();
-    if(imageParent.length!=0) {
+    if(imageParent.length!==0) {
     	thisImage = $(imageParent);
     }
     getCurrentImage(thisImage);
